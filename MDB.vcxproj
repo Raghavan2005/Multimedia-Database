@@ -158,7 +158,11 @@
     <ClInclude Include="Encoder_QE.h" />
     <ClInclude Include="ProductInfo.h" />
     <ClInclude Include="Query_Engine.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="SystemInfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MDB.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

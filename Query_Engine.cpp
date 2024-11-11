@@ -9,7 +9,7 @@
 #include "CMD_Manipulation.h"
 #include "cmd_Use.h"
 
-const std::string query_list[5] = { "create", "drop", "use", "rename","export"}; //main cmd
+const std::string query_list[8] = { "create", "drop", "use", "rename","export","help","exit()","credits"}; //main cmd
 
 
 void start_process_cmd(const std::string& command) {
@@ -33,7 +33,7 @@ void query_Selector(const std::string& command) {
        //create
     }
     else if (cmd == query_list[1]) {
-        std::cout << query_list[1];
+        std::cout << "Unknown command: " << "comming soon" << std::endl;
         //drop
 
     }
@@ -43,13 +43,35 @@ void query_Selector(const std::string& command) {
 
     }
     else if (cmd == query_list[3]) {
-        std::cout << query_list[3];
+        std::cout << "Unknown command: " << "comming soon" << std::endl;
         //rename
 
     }
     else if (cmd == query_list[4]) {
-        std::cout << query_list[4];
+        std::cout << "Unknown command: " << "comming soon" << std::endl;
         //export
+
+    }
+    else if (cmd == query_list[5]) {
+        std::cout << "I can't help you now , this project still in development hehee" << std::endl;
+        //export
+
+    }
+    else if (cmd == query_list[6] || cmd == "exit") {
+ 
+
+        
+            std::cout << "Exiting the program..." << std::endl;
+            exit(0);  
+        
+        
+        //exit
+
+    }
+    else if (cmd == query_list[7]) {
+        std::cout << "@Raghavan , Still in Development \n Profile : https://github.com/Raghavan2005" << std::endl;
+        
+        //credits
 
     }
     else {
