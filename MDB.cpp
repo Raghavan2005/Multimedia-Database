@@ -1,23 +1,32 @@
-// MDB.cpp : This file contains the 'main' function. Program execution begins and ends there.
-
 #include <iostream>
+#include <limits>
 #include "SystemInfo.h"
 #include "ProductInfo.h"
+#include "Auth.h"
+#include "Query_Engine.h"
 
 
 
 int main() {
-    std::string systemInfo = getSystemInfo();
- 
-    std::cout << productName <<" (tags / "<< version<<":"<< type<< " Nov  7 2024, 7 : 30 : 53)["<<systemInfo<<"] \n";
-    std::cout << "copyright by " << owner;
-    std::cout << "\nType 'help', 'credits', or 'license' for more information.\n";
    
-    while (true) {
-      //  std::cin >> choice;
-        std::cout << ">>> ";
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
+    std::string systemInfo = getSystemInfo();
+    std::cout << productName << " (tags / " << version << ":" << type << " Nov 7 2024, 7:30:53) [" << systemInfo << "]\n";
+    std::cout << "Copyright by " << owner;
+    std::cout << "\nType 'help', 'credits', or 'license' for more information.\n";
+    start_CheckAuth();
+    std::string userInput;
+
+  
+   
+
+    while (true) {
+        std::cout << ">>> ";
+        std::getline(std::cin, userInput); 
+        //std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        start_process_cmd(userInput);
+        //std::cout << "You entered: " << userInput << "\n";
     }
+
     return 0;
 }

@@ -127,11 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Auth.cpp" />
+    <ClCompile Include="Cmd_Create.cpp" />
+    <ClCompile Include="CMD_Manipulation.cpp" />
     <ClCompile Include="MDB.cpp" />
+    <ClCompile Include="Query_Engine.cpp" />
     <ClCompile Include="SystemInfo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Auth.h" />
+    <ClInclude Include="Cmd_Create.h" />
+    <ClInclude Include="CMD_Manipulation.h" />
     <ClInclude Include="ProductInfo.h" />
+    <ClInclude Include="Query_Engine.h" />
     <ClInclude Include="SystemInfo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
