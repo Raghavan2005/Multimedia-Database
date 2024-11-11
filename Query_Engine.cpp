@@ -5,22 +5,17 @@
 #include <vector>
 #include "Auth.h"
 #include "ProductInfo.h"
-#include "Cmd_Create.h"
+#include "cmd_Create.h"
 #include "CMD_Manipulation.h"
+#include "cmd_Use.h"
 
 const std::string query_list[5] = { "create", "drop", "use", "rename","export"}; //main cmd
 
 
 void start_process_cmd(const std::string& command) {
-	//create db
+
     query_Selector(toLowerCase(command));
-	//use db
-    
-    //drop db
-
-	//rename db
-
-	//export meta json
+	
     
 
 }
@@ -28,12 +23,13 @@ void start_process_cmd(const std::string& command) {
 void query_Selector(const std::string& command) {
     std::istringstream stream(command);
     std::string cmd;
+    std::string subquery;
     stream >> cmd; 
 
     if (cmd == query_list[0]) {
-        std::cout << "Creating database..." << std::endl;
-        std::cout << query_list[0] << std::endl;
-       // process_Create_Command();
+     
+        //std::cout << query_list[0] << std::endl;
+        process_create_command(command);
        //create
     }
     else if (cmd == query_list[1]) {
@@ -42,7 +38,7 @@ void query_Selector(const std::string& command) {
 
     }
     else if (cmd == query_list[2]) {
-        std::cout << query_list[2];
+        process_use_command(command);
         //use
 
     }

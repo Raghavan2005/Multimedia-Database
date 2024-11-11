@@ -36,9 +36,6 @@
     <ClCompile Include="SystemInfo.cpp">
       <Filter>Source Files\MDB_Engine\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="Cmd_Create.cpp">
-      <Filter>Source Files\MDB_Engine\Query_Engine</Filter>
-    </ClCompile>
     <ClCompile Include="Auth.cpp">
       <Filter>Source Files\MDB_Engine\Utils</Filter>
     </ClCompile>
@@ -47,6 +44,18 @@
     </ClCompile>
     <ClCompile Include="CMD_Manipulation.cpp">
       <Filter>Source Files\MDB_Engine\Query_Engine\Utils_QE</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_Create.cpp">
+      <Filter>Source Files\MDB_Engine\Query_Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Encoder_QE.cpp">
+      <Filter>Source Files\MDB_Engine\Query_Engine\Utils_QE</Filter>
+    </ClCompile>
+    <ClCompile Include="Decoder_QE.cpp">
+      <Filter>Source Files\MDB_Engine\Query_Engine\Utils_QE</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_Use.cpp">
+      <Filter>Source Files\MDB_Engine\Query_Engine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -59,13 +68,22 @@
     <ClInclude Include="Auth.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Cmd_Create.h">
-      <Filter>Header Files\QE</Filter>
-    </ClInclude>
     <ClInclude Include="Query_Engine.h">
       <Filter>Header Files\QE</Filter>
     </ClInclude>
     <ClInclude Include="CMD_Manipulation.h">
+      <Filter>Header Files\QE</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_Create.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Encoder_QE.h">
+      <Filter>Header Files\QE</Filter>
+    </ClInclude>
+    <ClInclude Include="Decoder_QE.h">
+      <Filter>Header Files\QE</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_Use.h">
       <Filter>Header Files\QE</Filter>
     </ClInclude>
   </ItemGroup>
