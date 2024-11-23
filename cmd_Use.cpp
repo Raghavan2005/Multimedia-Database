@@ -5,7 +5,7 @@
 #include <fstream>
 #include "Decoder_QE.h"
 #include "cmd_Use.h"
-
+#include "globals.h"
 // Function to decrypt and read config.mdb content
 std::string decryptConfigFile(const std::string& filePath) {
     std::ifstream file(filePath, std::ios::binary);
@@ -43,7 +43,7 @@ void process_use_command(const std::string& command) {
         return;
     }
 
-    std::string path = "D:/";
+    std::string path = "D:/testfolder";
     bool dbFound = false;
 
     // Iterate through each directory in the path
@@ -58,6 +58,7 @@ void process_use_command(const std::string& command) {
                 // Only proceed if the folder name matches the dbName
                 if (entry.path().filename() == dbName) {
                     dbFound = true;
+                    activeDatabase = dbName;
                     std::cout << "Database '" << dbName << "' found in folder: " << entry.path() << std::endl;
 
                     // Read and decrypt the config.mdb file

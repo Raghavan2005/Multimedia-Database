@@ -57,6 +57,9 @@
     <ClCompile Include="cmd_Use.cpp">
       <Filter>Source Files\MDB_Engine\Query_Engine</Filter>
     </ClCompile>
+    <ClCompile Include="cmd_Drop.cpp">
+      <Filter>Source Files\MDB_Engine\Query_Engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SystemInfo.h">
@@ -88,6 +91,12 @@
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_drop.h">
+      <Filter>Header Files\QE</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

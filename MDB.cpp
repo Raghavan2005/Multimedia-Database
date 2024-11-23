@@ -5,10 +5,10 @@
 #include "Auth.h"
 #include "Query_Engine.h"
 #include <stdlib.h>
+#include "globals.h"
 
 
-
-
+std::string activeDatabase = "";
 int main() {
     
 

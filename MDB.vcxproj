@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Auth.cpp" />
     <ClCompile Include="cmd_Create.cpp" />
+    <ClCompile Include="cmd_Drop.cpp" />
     <ClCompile Include="CMD_Manipulation.cpp" />
     <ClCompile Include="cmd_Use.cpp" />
     <ClCompile Include="Decoder_QE.cpp" />
@@ -152,10 +153,12 @@
   <ItemGroup>
     <ClInclude Include="Auth.h" />
     <ClInclude Include="cmd_Create.h" />
+    <ClInclude Include="cmd_drop.h" />
     <ClInclude Include="CMD_Manipulation.h" />
     <ClInclude Include="cmd_Use.h" />
     <ClInclude Include="Decoder_QE.h" />
     <ClInclude Include="Encoder_QE.h" />
+    <ClInclude Include="globals.h" />
     <ClInclude Include="ProductInfo.h" />
     <ClInclude Include="Query_Engine.h" />
     <ClInclude Include="resource.h" />
