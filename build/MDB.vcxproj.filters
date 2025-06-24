@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\Projects\Multimedia-Database\MDB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Projects\Multimedia-Database\src\MDB_Engine\Auth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Projects\Multimedia-Database\src\MDB_Engine\Query_Engine\Cmd_Create.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Projects\Multimedia-Database\src\MDB_Engine\Query_Engine\Query_Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Projects\Multimedia-Database\src\MDB_Engine\Query_Engine\Utils_QE\CMD_Manipulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Projects\Multimedia-Database\src\MDB_Engine\Query_Engine\Utils_QE\Decoder_QE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Projects\Multimedia-Database\src\MDB_Engine\Query_Engine\Utils_QE\Encoder_QE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Projects\Multimedia-Database\src\MDB_Engine\Query_Engine\cmd_Drop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Projects\Multimedia-Database\src\MDB_Engine\Query_Engine\cmd_Use.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Projects\Multimedia-Database\src\MDB_Engine\SystemInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Projects\Multimedia-Database\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{973C7C11-4AB8-3E54-ADC6-9C4B05A45EA4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

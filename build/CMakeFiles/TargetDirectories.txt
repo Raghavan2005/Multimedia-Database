@@ -1,0 +1,3 @@
+F:/Projects/Multimedia-Database/build/CMakeFiles/MDB.dir
+F:/Projects/Multimedia-Database/build/CMakeFiles/ALL_BUILD.dir
+F:/Projects/Multimedia-Database/build/CMakeFiles/ZERO_CHECK.dir

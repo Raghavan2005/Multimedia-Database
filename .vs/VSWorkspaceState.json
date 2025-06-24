@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\include",
+    "\\include\\QE",
+    "\\src",
+    "\\src\\MDB_Engine",
+    "\\src\\MDB_Engine\\Query_Engine"
+  ],
+  "SelectedNode": "\\MDB.cpp",
+  "PreviewInSolutionExplorer": false
+}

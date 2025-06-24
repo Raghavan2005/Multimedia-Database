@@ -1,11 +1,11 @@
 #include <iostream>
 #include <limits>
-#include "SystemInfo.h"
-#include "ProductInfo.h"
-#include "Auth.h"
-#include "Query_Engine.h"
+#include "QE/SystemInfo.h"
+#include "QE/ProductInfo.h"
+#include "src/MDB_Engine/Auth.cpp"
+#include "QE/Query_Engine.h"
 #include <stdlib.h>
-#include "globals.h"
+#include "QE/globals.h"
 
 
 std::string activeDatabase = "";
